@@ -1,0 +1,47 @@
+body{
+  transition: all .3s linear;
+  background-color:var(--background-color);
+  color:var(--text-secondary)
+}
+html{
+  overflow-y:auto !important;
+}
+a {
+  color:var(--text-primary);
+  &:link {color:var(--text-primary)}
+  &:visited {color:var(--text-primary)}
+  &:hover {color:var(--theme-primary)}
+  &:active {color:var(--text-primary)}
+}
+
+* {
+  //letter-spacing: 0 !important;
+   word-break: break-word;
+}
+pre{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.v-application--wrap{
+  min-height:auto !important;
+  div[style*="text-align: right"]{
+    .draggable-custom-item{
+      float:right !important;
+    }
+  }
+  div[style*="text-align: center"]{
+    .draggable-custom-item{
+      float: none !important;
+      display: inline-block;
+    }
+  }
+}
+
+
+//@media print {
+//  @page {
+//    /*A4: 210mm × 297mm，size: 794px × 1123px，0边距*/
+//    /*171.9mm × 258.9mm，size：649px × 978px，19.05mm边距（ie浏览器默认打印边距） */
+//    size: 210mm 297mm;
+//  }
+//}
